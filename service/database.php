@@ -1,11 +1,10 @@
 <?php
 $hostname = 'localhost';
-$port = 4040;
-$database = 'PHP';
+$database = 'crud_buku';
 $username = 'root';
-$password = 'fata8712';
+$password = '';
 
-$connect = mysqli_connect($hostname, $username, $password, $database, $port);
+$connect = mysqli_connect($hostname, $username, $password, $database);
 
 if (mysqli_connect_errno()) {
     die("Database connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")");
